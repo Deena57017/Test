@@ -1,22 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from'./Header';
 
 function App() {
-  const postcode=(
-    <p>รหัสไปรษณีย์ 83000</p>
-  );
- return (
-
-  <div>
-    <p>นางสาวดีน่า พันธุสะ</p>
-    <p>Phuket</p>
-    {postcode}
-    <Header/>
-    
-  </div>
- 
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
